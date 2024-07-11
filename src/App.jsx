@@ -1,35 +1,40 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
+import HomeDemo from "./Componets/HomeDemo";
+import HeaderDemo from "./Componets/HeaderDemo";
+import NavDemo from "./Componets/NavDemo";
+import ContentDemo from "./Componets/ContentDemo";
+import RenderShoes from "./Componets/RenderShoes";
+import DemoCss from "./Componets/DemoCss/DemoCss";
+import DemoEvent from "./Componets/DemoEvent";
 
 function App() {
-  const [count, setCount] = useState(0)
+    const [count, setCount] = useState(0);
 
-  return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    return (
+        <>
+
+            <DemoCss/>
+
+            <HomeDemo />
+
+            <HeaderDemo />
+
+            <HeaderDemo />
+
+            <div className="grid grid-cols-3 h-40">
+                <NavDemo />
+                <ContentDemo />
+            </div>
+            
+            <RenderShoes />
+
+            <DemoEvent/>
+
+            <div className="container">
+                <h4 className="demo_sass">Hello SASS</h4>
+            </div>
+        </>
+    );
 }
 
-export default App
+export default App;
