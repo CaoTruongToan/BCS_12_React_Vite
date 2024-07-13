@@ -6,33 +6,32 @@ import ContentDemo from "./Componets/ContentDemo";
 import RenderShoes from "./Componets/RenderShoes";
 import DemoCss from "./Componets/DemoCss/DemoCss";
 import DemoEvent from "./Componets/DemoEvent";
+import DemoState from "./Componets/DemoState/DemoState";
+import BaiTapSate from "./Componets/DemoState/BaiTapSate";
+import BaiTapPokemonProps from "./Componets/BaiTapPokemon/BaiTapPokemonProps";
+import BaiTapHienThiSmatphone from "./Componets/BaiTapSmatphone/BaiTapHienThiSmatphone";
 
 function App() {
     const [count, setCount] = useState(0);
 
     return (
         <>
-
-            <DemoCss/>
-
+            {/* <DemoCss/>
             <HomeDemo />
-
             <HeaderDemo />
-
             <HeaderDemo />
-
             <div className="grid grid-cols-3 h-40">
                 <NavDemo />
                 <ContentDemo />
             </div>
-            
             <RenderShoes />
-
             <DemoEvent/>
+            <DemoState/> */}
 
-            <div className="container">
-                <h4 className="demo_sass">Hello SASS</h4>
-            </div>
+            {/* <BaiTapSate/> */}
+
+            {/* <BaiTapPokemonProps/> */}
+            <BaiTapHienThiSmatphone/>
         </>
     );
 }
